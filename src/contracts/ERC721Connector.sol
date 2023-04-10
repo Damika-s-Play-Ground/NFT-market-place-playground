@@ -2,7 +2,8 @@
 pragma solidity ^0.8.0;
 
 import './ERC721Metadata.sol';
-contract ERC721Connector is ERC721Metadata {
+import './ERC721Enumerable.sol';
+contract ERC721Connector is ERC721Metadata, ERC721Enumerable {
 
     // we deploy the connector right away
     // we pass the metadata (name and symbol) to the ERC721Metadata constructor
