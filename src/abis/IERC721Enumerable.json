@@ -391,7 +391,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-09-07T18:37:35.592Z",
+  "updatedAt": "2023-09-07T19:14:08.143Z",
   "devdoc": {
     "details": "See https://eips.ethereum.org/EIPS/eip-721  Note: the ERC-165 identifier for this interface is 0x780e9d63.",
     "kind": "dev",
