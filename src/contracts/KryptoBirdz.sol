@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity 0.8.19;
 
 import "./ERC721Connector.sol";
 
-contract kryptoBird is ERC721Connector {
+contract KryptoBirdz is ERC721Connector {
 
     // array to store our nfts
     string[] public kryptoBirdz;
