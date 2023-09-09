@@ -2,6 +2,8 @@
 pragma solidity 0.8.19;
 import './interfaces/IERC721.sol';
 import './ERC165.sol';
+import './libraries/SafeMath.sol';
+import './libraries/Counters.sol';
 
 /*
 building out the minting function:
@@ -24,13 +26,15 @@ create two requirements -
      */
 
 contract ERC721 is ERC165, IERC721{
+    using SafeMath for uint256;
+    using Counters for Counters.Counter;
     // mapping in solidity creates a hash table of key pair values
 
     // Mapping from token id to the owner
     mapping(uint => address) private _tokenOwner;
 
     // Mapping from  owner to the number of owned tokens
-    mapping(address => uint) private _ownedTokensCount;
+    mapping(address => Counters.Counter) private _ownedTokensCount;
 
     // Mapping from token id to approved addresses
     mapping(uint256 => address) private _tokenApprovals;
@@ -57,7 +61,7 @@ contract ERC721 is ERC165, IERC721{
             _owner != address(0),
             "ERC721: balance query for the zero address"
         );
-        return _ownedTokensCount[_owner];
+        return _ownedTokensCount[_owner].current();
     }
 
     /// @notice Find the owner of an NFT
@@ -91,7 +95,7 @@ contract ERC721 is ERC165, IERC721{
         // a. nft to point to an address
         _tokenOwner[tokenId] = to;
         // b. keep track of the token ids
-        _ownedTokensCount[to] += 1;
+        _ownedTokensCount[to].increment();
         // e. create an event that emits a transfer log - contract address where it is being minted to, the id
         emit Transfer(address(0), to, tokenId);
     }
@@ -121,8 +125,8 @@ contract ERC721 is ERC165, IERC721{
         // 3. Clear the current approval
         // _clearApproval(_from, _tokenId);
         // 4. Update the balances
-        _ownedTokensCount[_from] -= 1;
-        _ownedTokensCount[_to] += 1;
+        _ownedTokensCount[_from].decrement();
+        _ownedTokensCount[_to].increment();
         // 5. Update the owner
         _tokenOwner[_tokenId] = _to;
         // 6. Emit the transfer event

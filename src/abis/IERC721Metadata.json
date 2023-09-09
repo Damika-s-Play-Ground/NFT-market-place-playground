@@ -42,15 +42,15 @@
     "absolutePath": "project:/src/contracts/interfaces/IERC721Metadata.sol",
     "exportedSymbols": {
       "IERC721Metadata": [
-        841
+        853
       ]
     },
-    "id": 842,
+    "id": 854,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 827,
+        "id": 839,
         "literals": [
           "solidity",
           "0.8",
@@ -66,15 +66,15 @@
         "contractDependencies": [],
         "contractKind": "interface",
         "documentation": {
-          "id": 828,
+          "id": 840,
           "nodeType": "StructuredDocumentation",
           "src": "113:199:10",
           "text": "@title ERC-721 Non-Fungible Token Standard, optional metadata extension\n @dev See https://eips.ethereum.org/EIPS/eip-721\n  Note: the ERC-165 identifier for this interface is 0x5b5e139f."
         },
         "fullyImplemented": false,
-        "id": 841,
+        "id": 853,
         "linearizedBaseContracts": [
-          841
+          853
         ],
         "name": "IERC721Metadata",
         "nameLocation": "322:15:10",
@@ -82,13 +82,13 @@
         "nodes": [
           {
             "documentation": {
-              "id": 829,
+              "id": 841,
               "nodeType": "StructuredDocumentation",
               "src": "361:72:10",
               "text": "@notice A descriptive name for a collection of NFTs in this contract"
             },
             "functionSelector": "06fdde03",
-            "id": 834,
+            "id": 846,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -96,23 +96,23 @@
             "nameLocation": "448:4:10",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 830,
+              "id": 842,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "452:2:10"
             },
             "returnParameters": {
-              "id": 833,
+              "id": 845,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 832,
+                  "id": 844,
                   "mutability": "mutable",
                   "name": "_name",
                   "nameLocation": "492:5:10",
                   "nodeType": "VariableDeclaration",
-                  "scope": 834,
+                  "scope": 846,
                   "src": "478:19:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -121,7 +121,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 831,
+                    "id": 843,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "478:6:10",
@@ -135,7 +135,7 @@
               ],
               "src": "477:21:10"
             },
-            "scope": 841,
+            "scope": 853,
             "src": "439:60:10",
             "stateMutability": "view",
             "virtual": false,
@@ -143,13 +143,13 @@
           },
           {
             "documentation": {
-              "id": 835,
+              "id": 847,
               "nodeType": "StructuredDocumentation",
               "src": "507:57:10",
               "text": "@notice An abbreviated name for NFTs in this contract"
             },
             "functionSelector": "95d89b41",
-            "id": 840,
+            "id": 852,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -157,23 +157,23 @@
             "nameLocation": "579:6:10",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 836,
+              "id": 848,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "585:2:10"
             },
             "returnParameters": {
-              "id": 839,
+              "id": 851,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 838,
+                  "id": 850,
                   "mutability": "mutable",
                   "name": "_symbol",
                   "nameLocation": "625:7:10",
                   "nodeType": "VariableDeclaration",
-                  "scope": 840,
+                  "scope": 852,
                   "src": "611:21:10",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -182,7 +182,7 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 837,
+                    "id": 849,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "611:6:10",
@@ -196,14 +196,14 @@
               ],
               "src": "610:23:10"
             },
-            "scope": 841,
+            "scope": 853,
             "src": "570:64:10",
             "stateMutability": "view",
             "virtual": false,
             "visibility": "external"
           }
         ],
-        "scope": 842,
+        "scope": 854,
         "src": "312:681:10",
         "usedErrors": []
       }
@@ -216,7 +216,7 @@
   },
   "networks": {},
   "schemaVersion": "3.4.13",
-  "updatedAt": "2023-09-07T19:14:08.147Z",
+  "updatedAt": "2023-09-09T02:18:27.022Z",
   "devdoc": {
     "details": "See https://eips.ethereum.org/EIPS/eip-721  Note: the ERC-165 identifier for this interface is 0x5b5e139f.",
     "kind": "dev",
