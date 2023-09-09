@@ -167,3 +167,23 @@ class App extends Component {
 }
 
 export default App;
+
+
+/* 
+image links to use:
+https://i.ibb.co/jDJqGbL/k1.png
+https://i.ibb.co/349m19j/k2.png
+https://i.ibb.co/YRSStdK/k3.png
+https://i.ibb.co/54X4rKg/k4.png
+https://i.ibb.co/f26bPdm/k5.png
+https://i.ibb.co/gvjvDXk/k6.png
+https://i.ibb.co/199CWJ4/k7.png
+https://i.ibb.co/477YrSh/k8.png
+https://ibb.co/J2ZhxdM
+https://ibb.co/wKfQ8PS
+https://ibb.co/2nc4ZV2
+https://ibb.co/bj4DQ8g
+https://ibb.co/2WGLj69
+https://ibb.co/h2QXn6t
+https://ibb.co/XJrPgdJ
+ */
